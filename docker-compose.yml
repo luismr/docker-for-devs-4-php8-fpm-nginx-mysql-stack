@@ -42,7 +42,7 @@ services:
       - ./src:/var/www/html
     healthcheck:
       test: php-fpm -t
-      interval: 5s
+      interval: 60s
       retries: 5
     depends_on:
       db:
